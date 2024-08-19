@@ -1,0 +1,2 @@
+# wordler
+Probabilistic Wordle solver
