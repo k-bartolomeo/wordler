@@ -15,3 +15,6 @@ wordler = "wordler.main:app"
 
 [tool.setuptools]
 packages = ["wordler", "wordler.cli", "wordler.data", "wordler.solver"]
+
+[tool.setuptools.package-data]
+"*" = ["*.csv"]

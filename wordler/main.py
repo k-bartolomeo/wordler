@@ -3,7 +3,7 @@ import string
 import typer
 
 from wordler.solver import Solver
-from wordler.data import Constants
+from wordler.tables import ProbabilityTables
 from wordler.cli.functions import (
     get_results, 
     get_initial_guess,
@@ -14,7 +14,7 @@ from wordler.cli.functions import (
 )
 
 
-constants = Constants('data/words_and_counts.csv')
+constants = ProbabilityTables('data/words_and_counts.csv')
 solver = Solver(constants=constants)
 
 app = typer.Typer()

@@ -3,11 +3,11 @@ import operator
 from functools import reduce
 from itertools import pairwise
 
-from ..data import Constants
+from ..tables import ProbabilityTables
 
 
 class Solver:
-    def __init__(self, constants: Constants):
+    def __init__(self, constants: ProbabilityTables):
         self.letter_map = constants.letter_map
         self.position_matrix = constants.position_matrix
         self.transition_matrices = constants.transition_matrices

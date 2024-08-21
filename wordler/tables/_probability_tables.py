@@ -10,7 +10,7 @@ import pandas as pd
 warnings.filterwarnings('ignore')
 
 
-class Constants:
+class ProbabilityTables:
     def __init__(self, word_data: str):
         self.letter_map = {k:v for v,k in enumerate('#' + string.ascii_lowercase)}
         self.letter_lookup = {k:v for k,v in enumerate('#' + string.ascii_lowercase)}
