@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wordler-cli"
+version = "0.0.1"
+authors = [{name="Kevin Schattin"}]
+description = "Wordle solver!"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+wordler = "wordler.main:app"
+
+[tool.setuptools]
+packages = ["wordler", "wordler.cli", "wordler.data", "wordler.solver"]
