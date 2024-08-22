@@ -1,5 +1,4 @@
 import string
-
 import typer
 
 from wordler.solver import Solver
@@ -20,7 +19,18 @@ solver = Solver(constants=constants)
 app = typer.Typer()
 
 @app.command()
-def start():
+def start() -> None:
+    """Entry point for Wordler CLI
+
+    Creates initial set of candidate letters for each position and 
+    creates list of possible words in Wordle corpus. Also initializes
+    set of letters that must be included in goal word per feedback
+    from Wordle. Starts off by getting initial guess from user. Then
+    iterates through series of six guesses, updating candidate letters 
+    for each position and remaining words in search space along the 
+    way. Provides guesses to user through CLI messages and retrieves 
+    Wordle feedback on guess through CLI prompts.
+    """
     candidates = [set('#' + string.ascii_lowercase) for _ in range(6)]
     remaining_words = solver.words[::]
     must_include = set('#')
