@@ -19,7 +19,8 @@ Check out the example of Wordler! solving the puzzle for the word "meter" below:
 
 ![](assets/Wordler!.gif)
 
-# Installation
+# Getting Started
+## Installation
 The Wordler! CLI app has been published to PyPI and can be installed with PIP. 
 ```
 pip install wordler-cli
@@ -30,6 +31,17 @@ environment of your choosing:
 ```
 pip install git+https://github.com/k-bartolomeo/wordler.git
 ```
+
+## Running Wordler!
+Once you have install Wordler!, you can just open a terminal, type `wordler`, and hit 
+enter:
+
+```
+(base) kevinschattin@Kevins-MacBook-Pro wordler % wordler
+```
+
+The app will likely take a second or two to load, and then you'll be prompted for your 
+initial guess!
 
 # Methodology
 Wordler! starts off with sets of all possible letters for each position in a word. As
