@@ -62,7 +62,7 @@ class ProbabilityTables:
         Path to CSV file storing words in Wordle corpus and 
         corresponding usage counts.
     """
-    def __init__(self, word_data: str):
+    def __init__(self, word_data: str) -> None:
         self.letter_map = {k:v for v,k in enumerate('#' + string.ascii_lowercase)}
         self.letter_lookup = {k:v for k,v in enumerate('#' + string.ascii_lowercase)}
         self.word_data = pd.read_csv(word_data)
