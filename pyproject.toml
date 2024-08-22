@@ -14,4 +14,7 @@ requires-python = ">=3.9"
 wordler = "wordler.main:app"
 
 [tool.setuptools]
-packages = ["wordler", "wordler.cli", "wordler.data", "wordler.solver"]
+packages = ["wordler", "wordler.cli", "wordler.tables", "wordler.solver"]
+
+[tool.setuptools.package-data]
+"*" = ["*.csv"]
