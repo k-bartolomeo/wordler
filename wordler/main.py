@@ -13,8 +13,8 @@ from wordler.cli.functions import (
 )
 
 
-constants = ProbabilityTables('data/words_and_counts.csv')
-solver = Solver(constants=constants)
+tables = ProbabilityTables('data/words_and_counts.csv')
+solver = Solver(tables=tables)
 
 app = typer.Typer()
 
