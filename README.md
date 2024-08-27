@@ -80,9 +80,9 @@ counts derived from the Google Web Trillion Word Corpus.
 
 # Web App
 A web application that offers the same functionality as the CLI, albeit in a more 
-aesthetically pleasing manner, is currently under development. This application is being 
+aesthetically pleasing manner, is currently under development. This application is being
 built using mostly Python and the Dash framework, with a small bit of JavaScript sprinkled
-in. The basic layout of the application is pictured below, and the code that has been 
-written for the app thus far can be found on the `app-dev` branch of this repository.
+in. The basic functionality of the application is pictured below, and the code that has 
+been written for the app thus far can be found on the `app-dev` branch of this repository.
 
-![](<assets/Wordler! App.png>)
+![](<assets/Wordler! Web.gif>)
