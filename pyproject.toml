@@ -13,7 +13,7 @@ license = {file = "LICENSE"}
 dependencies = [
     "questionary >= 2.0.1",
     "pandas >= 2.2.2",
-    "numpy >= 1.24.2",
+    "numpy >= 1.24.2, < 2.0",
     "typer >= 0.12.4",
 ]
 classifiers = [
@@ -44,7 +44,7 @@ Issues = "https://github.com/k-bartolomeo/wordler/issues"
 packages = [
     "wordler",
     "wordler.app",
-    "wordler.app.javascript",
+    "wordler.app.callbacks",
     "wordler.app.cards",
     "wordler.app.utils",
     "wordler.cli",
